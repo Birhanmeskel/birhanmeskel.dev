@@ -32,9 +32,9 @@ export const experience: Experience[] = [
     title: "Software Engineer I",
     company: "Hatch Africa · EthioChicken",
     url: "https://hatchafrica.co",
-    previousTitles: ["Junior Full-Stack Developer"],
+    previousTitles: ["Full-Stack Developer"],
     description:
-      "Promoted to Software Engineer I after eight months as a Junior Full-Stack Developer. Develop and maintain scalable web and mobile applications with Next.js, NestJS, React Native and Firebase, build and optimize RESTful APIs and backend services, and deploy with Google Cloud Run and Artifact Registry — working with cross-functional teams to deliver business-driven solutions.",
+      "Develop and maintain scalable web and mobile applications with Next.js, NestJS, React Native and Firebase, build and optimize RESTful APIs and backend services, and deploy with Google Cloud Run and Artifact Registry - working with cross-functional teams to deliver business-driven solutions.",
     tech: ["Next.js", "NestJS", "React Native", "Firebase", "Google Cloud Run", "REST APIs"],
   },
   {
@@ -62,6 +62,7 @@ export type Project = {
 export const projects: Project[] = [
   {
     title: "Kech Delivery Platform",
+    madeAt: "Client",
     description:
       "A delivery platform made up of customer, restaurant-owner and driver mobile apps, plus sales and admin dashboards for running day-to-day operations.",
     tech: ["React Native", "Next.js", "NestJS", "Firebase"], // TODO: confirm stack
@@ -129,7 +130,7 @@ export const projects: Project[] = [
   },
   {
     title: "Synchrony — Business Process Automation",
-    madeAt: "Power Platform",
+    madeAt: "Ewket Tech",
     description:
       "A suite of automations: employee request apps, multi-level approval workflows with history tracking, onboarding and offboarding coordination between HR and managers, document management, and email/Teams reminders for pending and overdue approvals.",
     tech: ["Power Apps", "Power Automate", "SharePoint", "Teams"],
@@ -137,7 +138,7 @@ export const projects: Project[] = [
   },
   {
     title: "Kifiya — Offer of Employment Automation",
-    madeAt: "Power Platform",
+    madeAt: "Ewket Tech",
     description:
       "Automated the offer-of-employment process for external program managers, streamlining the business workflow end to end.",
     tech: ["Power Automate", "Power Apps", "SharePoint"],
@@ -145,6 +146,7 @@ export const projects: Project[] = [
   },
   {
     title: "E-Commerce Clone",
+    madeAt: "Evangadi Bootcamp",
     description:
       "An Amazon-style shop with authentication, product listings, a fully functional cart and checkout.",
     image: { src: "/projects/amazon-clone.jpg", width: 1000, height: 1000 },
@@ -155,6 +157,7 @@ export const projects: Project[] = [
   },
   {
     title: "Power BI Dashboards",
+    madeAt: "Ewket Tech",
     description:
       "Business-intelligence dashboards: AdventureWorks sales insights and Zoom attendance analysis.",
     tech: ["Power BI", "Data Cleaning", "Visualization"],

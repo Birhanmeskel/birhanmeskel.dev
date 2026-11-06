@@ -69,7 +69,7 @@ export default function Home() {
             <SectionHeading>About</SectionHeading>
             <div className="space-y-4">
               <p>
-                I&apos;m a full-stack software engineer who builds web, mobile and backend applications — and
+                I&apos;m a full-stack software engineer who builds web, mobile and backend applications and
                 automates the business processes behind them.
               </p>
               <p>
