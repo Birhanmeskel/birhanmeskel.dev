@@ -8,20 +8,23 @@ import "./globals.css";
 
 const inter = Inter({ variable: "--font-inter", subsets: ["latin"] });
 
-const description = `${profile.name} — ${profile.title} based in ${profile.location}. ${profile.tagline}`;
+// Kept short for search/social previews: title 50–60 chars, description ≤ ~125 chars.
+const title = `${profile.name} — Full-Stack Software Engineer, Ethiopia`;
+const description =
+  "Software engineer in Addis Ababa building web and mobile apps with Next.js, NestJS, React Native and Power Platform.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(profile.siteUrl),
-  title: { default: profile.name, template: `%s · ${profile.name}` },
+  title: { default: title, template: `%s · ${profile.name}` },
   description,
   openGraph: {
-    title: profile.name,
+    title,
     description,
     url: "/",
     siteName: profile.name,
     type: "website",
   },
-  twitter: { card: "summary_large_image", title: profile.name, description },
+  twitter: { card: "summary_large_image", title, description },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
