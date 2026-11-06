@@ -4,6 +4,7 @@ import { Analytics } from "@vercel/analytics/next";
 import { profile } from "@/data/site";
 import Spotlight from "@/components/Spotlight";
 import ThemeToggle from "@/components/ThemeToggle";
+import { TechIconSprite } from "@/components/TechIcon";
 import "./globals.css";
 
 const inter = Inter({ variable: "--font-inter", subsets: ["latin"] });
@@ -40,6 +41,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       </head>
       {/* suppressHydrationWarning: browser extensions (e.g. ColorZilla) inject attributes on <body> */}
       <body className="font-sans leading-relaxed" suppressHydrationWarning>
+        <TechIconSprite />
         <Spotlight />
         <ThemeToggle />
         <a

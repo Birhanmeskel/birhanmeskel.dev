@@ -50,7 +50,37 @@ const ICONS: Record<string, { Icon: IconType; color?: string }> = {
   Visualization: { Icon: TbChartDots },
 };
 
+const FALLBACK = "fallback";
+const slug = (name: string) => `tech-${name.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`;
+const idFor = (name: string) => (name in ICONS ? slug(name) : slug(FALLBACK));
+
+/**
+ * Every icon's SVG is defined ONCE here (rendered in the root layout), and each
+ * <TechIcon> just references it with <use>. Rendering the react-icons
+ * components directly repeated their path data ~90 times in the HTML and RSC
+ * payload (~430 KB), which broke link previews on WhatsApp.
+ */
+export function TechIconSprite() {
+  const entries: [string, IconType][] = [
+    ...Object.entries(ICONS).map(([name, { Icon }]) => [name, Icon] as [string, IconType]),
+    [FALLBACK, TbCode],
+  ];
+  return (
+    <svg aria-hidden width="0" height="0" style={{ position: "absolute", overflow: "hidden" }}>
+      {entries.map(([name, Icon]) => (
+        <symbol key={name} id={slug(name)}>
+          <Icon width="100%" height="100%" />
+        </symbol>
+      ))}
+    </svg>
+  );
+}
+
 export default function TechIcon({ name, className = "h-3.5 w-3.5" }: { name: string; className?: string }) {
-  const { Icon, color } = ICONS[name] ?? { Icon: TbCode };
-  return <Icon className={`shrink-0 ${className}`} style={color ? { color } : undefined} aria-hidden />;
+  const color = ICONS[name]?.color;
+  return (
+    <svg className={`shrink-0 ${className}`} style={color ? { color } : undefined} aria-hidden>
+      <use href={`#${idFor(name)}`} />
+    </svg>
+  );
 }
