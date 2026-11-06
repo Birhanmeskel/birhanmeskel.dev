@@ -73,7 +73,7 @@ export default function Home() {
                 automates the business processes behind them.
               </p>
               <p>
-                I&apos;m currently a <span className={strong}>Mid Level Software Engineer I</span> at{" "}
+                I&apos;m currently a <span className={strong}>Software Engineer I</span> at{" "}
                 <a className={`${strong} hover:text-accent focus-visible:text-accent`} href="https://hatchafrica.co" target="_blank" rel="noreferrer noopener">
                   Hatch Africa
                 </a>
