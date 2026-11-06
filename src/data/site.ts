@@ -122,11 +122,11 @@ export const projects: Project[] = [
     madeAt: "Evangadi Bootcamp",
     description:
       "A Q&A forum that acts as a central hub for student questions and suggestions, encouraging community engagement and peer learning.",
-    image: { src: "/projects/evangadi-forum.jpg", width: 1013, height: 1024 },
+    // image: { src: "/projects/evangadi-forum.jpg", width: 1013, height: 1024 },
     tech: ["React", "Node.js", "Express", "MySQL"],
     liveUrl: "https://forumbybirhan.netlify.app/",
     githubUrl: "https://github.com/Birhanmeskel/Evangadi_Forum",
-    featured: false,
+    featured: true,
   },
   {
     title: "Synchrony — Business Process Automation",
@@ -149,11 +149,11 @@ export const projects: Project[] = [
     madeAt: "Evangadi Bootcamp",
     description:
       "An Amazon-style shop with authentication, product listings, a fully functional cart and checkout.",
-    image: { src: "/projects/amazon-clone.jpg", width: 1000, height: 1000 },
+    // image: { src: "/projects/amazon-clone.jpg", width: 1000, height: 1000 },
     tech: ["React", "Node.js", "Firebase"],
     liveUrl: "https://birhanzon.netlify.app/",
     githubUrl: "https://github.com/Birhanmeskel/Amazon-Clone",
-    featured: false,
+    featured: true,
   },
   {
     title: "Power BI Dashboards",
@@ -161,7 +161,7 @@ export const projects: Project[] = [
     description:
       "Business-intelligence dashboards: AdventureWorks sales insights and Zoom attendance analysis.",
     tech: ["Power BI", "Data Cleaning", "Visualization"],
-    featured: false,
+    featured: true,
   },
 ];
 
