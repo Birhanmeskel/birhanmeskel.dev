@@ -68,41 +68,22 @@ export default function Home() {
             <SectionHeading>About</SectionHeading>
             <div className="space-y-4">
               <p>
-                I&apos;m a full-stack software engineer based in {profile.location} who builds web, mobile and
-                backend applications — and automates the business processes around them. I love turning
-                complex problems into clean, reliable and user-friendly products.
+                I&apos;m a full-stack software engineer who builds web, mobile and backend applications — and
+                automates the business processes behind them.
               </p>
               <p>
-                Currently, I&apos;m a <span className={strong}>Mid Level Software Engineer I</span> at{" "}
+                I&apos;m currently a <span className={strong}>Mid Level Software Engineer I</span> at{" "}
                 <a className={`${strong} hover:text-accent focus-visible:text-accent`} href="https://hatchafrica.co" target="_blank" rel="noreferrer noopener">
                   Hatch Africa
-                </a>{" "}
-                (EthioChicken), where I was recently promoted after eight months as a Junior Full-Stack
-                Developer. I build with <span className={strong}>Next.js, NestJS, React Native and Firebase</span>,
-                design REST APIs, and ship to <span className={strong}>Google Cloud Run</span>.
-              </p>
-              <p>
-                Before that, at <span className={strong}>Ewket Tech</span>, I worked as a{" "}
-                <span className={strong}>Power Platform Developer</span>, building approval workflows, employee
-                onboarding/offboarding and notification automations with Power Apps, Power Automate and
-                SharePoint.
-              </p>
-              <p>
-                I&apos;ve also shipped products like the{" "}
-                <a className={`${strong} hover:text-accent focus-visible:text-accent`} href="https://kechdelivery.cloud/" target="_blank" rel="noreferrer noopener">
-                  Kech Delivery Platform
-                </a>{" "}
-                (customer, restaurant and driver apps with admin dashboards) and{" "}
-                <a className={`${strong} hover:text-accent focus-visible:text-accent`} href="https://revobingo.com" target="_blank" rel="noreferrer noopener">
-                  Revobingo
                 </a>
-                , a live bingo platform with role-based access and real-time game management.
+                , working with <span className={strong}>Next.js, NestJS, React Native</span> and{" "}
+                <span className={strong}>Firebase</span>. I also build workflow automation with{" "}
+                <span className={strong}>Microsoft Power Platform</span>.
               </p>
               <p>
                 I hold a <span className={strong}>{education.degree}</span> from{" "}
-                <span className={strong}>{education.school}</span> ({education.detail}). I&apos;m detail-oriented,
-                quick to pick up new technologies, and above all committed to continuous learning — in my craft
-                and as a person.
+                <span className={strong}>{education.school}</span> ({education.detail}) and I&apos;m always
+                learning something new.
               </p>
             </div>
 
