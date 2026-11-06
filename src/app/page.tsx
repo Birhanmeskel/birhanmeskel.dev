@@ -65,7 +65,7 @@ export default function Home() {
         </header>
 
         {/* ---------- Content ---------- */}
-        <main id="content" className="pt-24 lg:w-[52%] lg:py-24">
+        <main id="content" className="pb-20 pt-24 lg:w-[52%] lg:py-24">
           <section id="about" className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24" aria-label="About me">
             <SectionHeading>About</SectionHeading>
             <div className="space-y-4">
