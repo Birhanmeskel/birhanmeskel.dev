@@ -8,7 +8,7 @@ export const profile = {
     "I build scalable, user-friendly web applications — from database to interface.",
   location: "Addis Ababa, Ethiopia",
   email: "birhan.abate17@gmail.com",
-  siteUrl: "https://birhanabate.dev", // TODO: replace with your real domain
+  siteUrl: "https://birhanmeskel-dev.vercel.app", // update if you add a custom domain
   // Drop an updated resume at public/resume.pdf and set this to "/resume.pdf".
   resumeUrl: null as string | null,
   socials: {
