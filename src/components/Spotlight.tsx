@@ -12,7 +12,7 @@ export default function Spotlight() {
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
 
     const onMove = (e: PointerEvent) => {
-      el.style.background = `radial-gradient(600px at ${e.clientX}px ${e.clientY}px, rgba(224, 168, 78, 0.09), transparent 80%)`;
+      el.style.background = `radial-gradient(600px at ${e.clientX}px ${e.clientY}px, var(--spotlight), transparent 80%)`;
     };
     window.addEventListener("pointermove", onMove);
     return () => window.removeEventListener("pointermove", onMove);

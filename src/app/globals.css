@@ -1,7 +1,8 @@
 @import "tailwindcss";
 
-/* "Ethiopian Coffee" palette */
+/* Dark — "Ethiopian Coffee" (default) */
 :root {
+  color-scheme: dark;
   --bg: #1a1410;
   --surface: #241c16;
   --text: #ede3d6;
@@ -9,6 +10,22 @@
   --muted: #a8998a;
   --accent: #e0a84e;
   --accent-soft: rgba(224, 168, 78, 0.12);
+  --spotlight: rgba(224, 168, 78, 0.09);
+  --card-edge: rgba(237, 227, 214, 0.08);
+}
+
+/* Light — "Latte" */
+:root[data-theme="light"] {
+  color-scheme: light;
+  --bg: #faf6f0;
+  --surface: #f1e8dc;
+  --text: #3b2f25;
+  --heading: #1f1812;
+  --muted: #6b5c4e;
+  --accent: #8a5409;
+  --accent-soft: rgba(176, 112, 20, 0.12);
+  --spotlight: rgba(224, 168, 78, 0.14);
+  --card-edge: rgba(59, 47, 37, 0.08);
 }
 
 @theme inline {
@@ -19,6 +36,7 @@
   --color-muted: var(--muted);
   --color-accent: var(--accent);
   --color-accent-soft: var(--accent-soft);
+  --color-card-edge: var(--card-edge);
   --font-sans: var(--font-inter);
 }
 
@@ -40,6 +58,7 @@ html {
 
 body {
   background: var(--bg);
+  transition: background-color 0.2s ease, color 0.2s ease;
   color: var(--muted);
 }
 

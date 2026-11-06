@@ -20,7 +20,7 @@ export function TechPills({ tech }: { tech: string[] }) {
 const cardBase =
   "group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50";
 const cardBg =
-  "absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-surface/70 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(237,227,214,0.08)] lg:group-hover:drop-shadow-lg";
+  "absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-surface/70 lg:group-hover:shadow-[inset_0_1px_0_0_var(--card-edge)] lg:group-hover:drop-shadow-lg";
 
 export function ExperienceCard({ job }: { job: Experience }) {
   const titleText = `${job.title} · ${job.company}`;
