@@ -3,9 +3,9 @@
 export const profile = {
   name: "Birhanmeskel Abate",
   shortName: "Birhan Abate",
-  title: "Software Engineer · Full-Stack Developer",
+  title: "Software Engineer · Full-Stack & Power Platform Developer",
   tagline:
-    "I build scalable, user-friendly web applications — from database to interface.",
+    "I build scalable web and mobile applications, and automate the business processes behind them.",
   location: "Addis Ababa, Ethiopia",
   email: "birhan.abate17@gmail.com",
   siteUrl: "https://birhanmeskel-dev.vercel.app", // update if you add a custom domain
@@ -31,20 +31,20 @@ export const experience: Experience[] = [
   {
     period: "2026 — Present", // TODO: confirm start month/year
     title: "Software Engineer I",
-    company: "Hatch Africa",
+    company: "Hatch Africa · EthioChicken",
     url: "https://hatchafrica.co",
     previousTitles: ["Junior Full-Stack Developer"],
     description:
-      "Promoted to Software Engineer I after eight months as a Junior Full-Stack Developer. Build and ship features across the stack — designing APIs, building responsive interfaces, and delivering reliable software that real users depend on.",
-    tech: ["TypeScript", "React", "Next.js", "Node.js", "NestJS"],
+      "Promoted to Software Engineer I after eight months as a Junior Full-Stack Developer. Develop and maintain scalable web and mobile applications with Next.js, NestJS, React Native and Firebase, build and optimize RESTful APIs and backend services, and deploy with Google Cloud Run and Artifact Registry — working with cross-functional teams to deliver business-driven solutions.",
+    tech: ["Next.js", "NestJS", "React Native", "Firebase", "Google Cloud Run", "REST APIs"],
   },
   {
-    period: "Previously", // TODO: add dates
-    title: "Full-Stack Developer",
-    company: "EthioChicken (AGP Poultry)",
+    period: "Sep 2025 — Apr 2026",
+    title: "Power Platform Developer",
+    company: "Ewket Tech",
     description:
-      "Developed and maintained scalable applications using Next.js, NestJS, React Native and Firebase. Built and optimized RESTful APIs and backend services, and collaborated with cross-functional teams to deliver business-driven solutions.",
-    tech: ["Next.js", "NestJS", "React Native", "Firebase", "REST APIs"],
+      "Built business-process automation with Power Apps and Power Automate: multi-level approval workflows, employee requests, onboarding and offboarding automation, and notification and reminder flows. Used SharePoint for document and request management.",
+    tech: ["Power Apps", "Power Automate", "SharePoint", "Microsoft 365"],
   },
 ];
 
@@ -61,6 +61,22 @@ export type Project = {
 };
 
 export const projects: Project[] = [
+  {
+    title: "Kech Delivery Platform",
+    description:
+      "A delivery platform made up of customer, restaurant-owner and driver mobile apps, plus sales and admin dashboards for running day-to-day operations.",
+    tech: ["React Native", "Next.js", "NestJS", "Firebase"], // TODO: confirm stack
+    liveUrl: "https://kechdelivery.cloud/",
+    featured: true,
+  },
+  {
+    title: "Hatch Africa Sales App & Dashboard",
+    madeAt: "Hatch Africa",
+    description:
+      "A sales mobile app and companion dashboard supporting customer, order, delivery and operational workflows for the field and back-office teams.",
+    tech: ["React Native", "Next.js", "NestJS", "Firebase"], // TODO: confirm stack
+    featured: true,
+  },
   {
     title: "Revobingo",
     madeAt: "Commercial",
@@ -79,7 +95,7 @@ export const projects: Project[] = [
     image: { src: "/projects/classytrips.png", width: 541, height: 690 },
     tech: ["React", "Node.js", "Express"], // TODO: confirm stack
     liveUrl: "https://classytrips.com.et",
-    featured: true,
+    featured: false,
   },
   {
     title: "AMU-TCSH Hospital Appointment System",
@@ -101,7 +117,32 @@ export const projects: Project[] = [
     tech: ["React", "Node.js", "Express", "MySQL"],
     liveUrl: "https://forumbybirhan.netlify.app/",
     githubUrl: "https://github.com/Birhanmeskel/Evangadi_Forum",
+    featured: false,
+  },
+  {
+    title: "Habtamu Amibara Real Estate",
+    madeAt: "Client",
+    description:
+      "A dynamic portfolio website for a real-estate sales agent, presenting properties with a clean, responsive design.",
+    tech: ["Next.js", "Tailwind CSS"], // TODO: confirm stack
+    liveUrl: "https://habtamurealestate.com",
+    featured: false,
+  },
+  {
+    title: "Synchrony — Business Process Automation",
+    madeAt: "Power Platform",
+    description:
+      "A suite of automations: employee request apps, multi-level approval workflows with history tracking, onboarding and offboarding coordination between HR and managers, document management, and email/Teams reminders for pending and overdue approvals.",
+    tech: ["Power Apps", "Power Automate", "SharePoint", "Teams"],
     featured: true,
+  },
+  {
+    title: "Kifiya — Offer of Employment Automation",
+    madeAt: "Power Platform",
+    description:
+      "Automated the offer-of-employment process for external program managers, streamlining the business workflow end to end.",
+    tech: ["Power Automate", "Power Apps", "SharePoint"],
+    featured: false,
   },
   {
     title: "E-Commerce Clone",
@@ -123,10 +164,10 @@ export const projects: Project[] = [
 ];
 
 export const skills = [
-  { group: "Frontend", items: ["React", "Next.js", "React Native", "Expo", "Tailwind CSS"] },
-  { group: "Backend", items: ["Node.js", "Express", "NestJS", "REST APIs", "Firebase"] },
-  { group: "Databases", items: ["MongoDB", "MySQL"] },
-  { group: "Business & Data", items: ["Power Platform", "Power BI", "SharePoint", "HubSpot"] },
+  { group: "Frontend & Mobile", items: ["React", "Next.js", "React Native", "Expo", "Tailwind CSS"] },
+  { group: "Backend & Cloud", items: ["Node.js", "Express", "NestJS", "REST APIs", "Firebase", "Google Cloud Run"] },
+  { group: "Databases", items: ["MongoDB", "MySQL", "Firestore"] },
+  { group: "Microsoft Power Platform", items: ["Power Apps", "Power Automate", "SharePoint", "Power BI", "Microsoft 365"] },
 ];
 
 export const education = {

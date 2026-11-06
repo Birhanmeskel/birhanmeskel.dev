@@ -68,26 +68,35 @@ export default function Home() {
             <SectionHeading>About</SectionHeading>
             <div className="space-y-4">
               <p>
-                I&apos;m a full-stack software engineer based in {profile.location} who loves turning
+                I&apos;m a full-stack software engineer based in {profile.location} who builds web, mobile and
+                backend applications — and automates the business processes around them. I love turning
                 complex problems into clean, reliable and user-friendly products.
               </p>
               <p>
-                Currently, I&apos;m a <span className={strong}>Software Engineer I</span> at{" "}
+                Currently, I&apos;m a <span className={strong}>Mid Level Software Engineer I</span> at{" "}
                 <a className={`${strong} hover:text-accent focus-visible:text-accent`} href="https://hatchafrica.co" target="_blank" rel="noreferrer noopener">
                   Hatch Africa
-                </a>
-                , where I was recently promoted after eight months as a Junior Full-Stack Developer. My work
-                spans the whole stack — designing APIs, building responsive interfaces and shipping features
-                that real users depend on.
+                </a>{" "}
+                (EthioChicken), where I was recently promoted after eight months as a Junior Full-Stack
+                Developer. I build with <span className={strong}>Next.js, NestJS, React Native and Firebase</span>,
+                design REST APIs, and ship to <span className={strong}>Google Cloud Run</span>.
               </p>
               <p>
-                Outside of work I&apos;ve built commercial and personal products, including{" "}
+                Before that, at <span className={strong}>Ewket Tech</span>, I worked as a{" "}
+                <span className={strong}>Power Platform Developer</span>, building approval workflows, employee
+                onboarding/offboarding and notification automations with Power Apps, Power Automate and
+                SharePoint.
+              </p>
+              <p>
+                I&apos;ve also shipped products like the{" "}
+                <a className={`${strong} hover:text-accent focus-visible:text-accent`} href="https://kechdelivery.cloud/" target="_blank" rel="noreferrer noopener">
+                  Kech Delivery Platform
+                </a>{" "}
+                (customer, restaurant and driver apps with admin dashboards) and{" "}
                 <a className={`${strong} hover:text-accent focus-visible:text-accent`} href="https://revobingo.com" target="_blank" rel="noreferrer noopener">
                   Revobingo
                 </a>
-                , a live bingo platform with role-based access and real-time game management, and a{" "}
-                <span className={strong}>Hospital Appointment System</span> that streamlines patient–doctor
-                scheduling.
+                , a live bingo platform with role-based access and real-time game management.
               </p>
               <p>
                 I hold a <span className={strong}>{education.degree}</span> from{" "}
