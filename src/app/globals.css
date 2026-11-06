@@ -1,26 +1,49 @@
 @import "tailwindcss";
 
+/* "Ethiopian Coffee" palette */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --bg: #1a1410;
+  --surface: #241c16;
+  --text: #ede3d6;
+  --heading: #f8f1e7;
+  --muted: #a8998a;
+  --accent: #e0a84e;
+  --accent-soft: rgba(224, 168, 78, 0.12);
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-text: var(--text);
+  --color-heading: var(--heading);
+  --color-muted: var(--muted);
+  --color-accent: var(--accent);
+  --color-accent-soft: var(--accent-soft);
+  --font-sans: var(--font-inter);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
   }
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--muted);
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--bg);
 }
