@@ -78,11 +78,20 @@ export const projects: Project[] = [
     featured: true,
   },
   {
+    title: "Habtamu Amibara Real Estate",
+    madeAt: "Client",
+    description:
+      "A dynamic portfolio website for a real-estate sales agent, presenting properties with a clean, responsive design.",
+    tech: ["Next.js", "Tailwind CSS"], // TODO: confirm stack
+    liveUrl: "https://habtamurealestate.com",
+    featured: true,
+  },
+  {
     title: "Revobingo",
     madeAt: "Commercial",
     description:
       "A commercial online bingo platform, live in production. Role-based access for admins, agents and cashiers, real-time game management, downloadable bingo cards and revenue tracking — built to handle many concurrent users.",
-    image: { src: "/projects/revobingo.png", width: 543, height: 684 },
+    // image: { src: "/projects/revobingo.png", width: 543, height: 684 },
     tech: ["MongoDB", "Express", "React", "Node.js", "MySQL"],
     liveUrl: "https://revobingo.com",
     featured: true,
@@ -92,7 +101,7 @@ export const projects: Project[] = [
     madeAt: "Client",
     description:
       "A luxury travel and car-rental platform that simplifies booking and management for clients. Contributed across frontend and backend, with a focus on responsive design and secure transactions.",
-    image: { src: "/projects/classytrips.png", width: 541, height: 690 },
+    // image: { src: "/projects/classytrips.png", width: 541, height: 690 },
     tech: ["React", "Node.js", "Express"], // TODO: confirm stack
     liveUrl: "https://classytrips.com.et",
     featured: false,
@@ -102,7 +111,7 @@ export const projects: Project[] = [
     madeAt: "Arba Minch University",
     description:
       "Final-year graduation project for Arba Minch University Hospital. Patients book appointments, doctors manage schedules, with role-based access, ratings and real-time updates.",
-    image: { src: "/projects/hospital.png", width: 540, height: 680 },
+    // image: { src: "/projects/hospital.png", width: 540, height: 680 },
     tech: ["MongoDB", "Express", "React", "Node.js"],
     liveUrl: "https://amuth.netlify.app/",
     githubUrl: "https://github.com/Birhanmeskel/GraduationProject",
@@ -120,15 +129,6 @@ export const projects: Project[] = [
     featured: false,
   },
   {
-    title: "Habtamu Amibara Real Estate",
-    madeAt: "Client",
-    description:
-      "A dynamic portfolio website for a real-estate sales agent, presenting properties with a clean, responsive design.",
-    tech: ["Next.js", "Tailwind CSS"], // TODO: confirm stack
-    liveUrl: "https://habtamurealestate.com",
-    featured: false,
-  },
-  {
     title: "Synchrony — Business Process Automation",
     madeAt: "Ewket Tech",
     description:
@@ -142,7 +142,7 @@ export const projects: Project[] = [
     description:
       "Automated the offer-of-employment process for external program managers, streamlining the business workflow end to end.",
     tech: ["Power Automate", "Power Apps", "SharePoint"],
-    featured: false,
+    featured: true,
   },
   {
     title: "E-Commerce Clone",
