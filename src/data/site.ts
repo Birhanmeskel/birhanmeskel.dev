@@ -9,8 +9,7 @@ export const profile = {
   location: "Addis Ababa, Ethiopia",
   email: "birhan.abate17@gmail.com",
   siteUrl: "https://birhanmeskel-dev.vercel.app", // update if you add a custom domain
-  // Drop an updated resume at public/resume.pdf and set this to "/resume.pdf".
-  resumeUrl: null as string | null,
+  resumeUrl: "/resume.pdf" as string | null,
   socials: {
     github: "https://github.com/Birhanmeskel",
     linkedin: "https://www.linkedin.com/in/birhanmeskel-abate/",
@@ -29,7 +28,7 @@ export type Experience = {
 
 export const experience: Experience[] = [
   {
-    period: "2026 — Present", // TODO: confirm start month/year
+    period: "Nov 2025 — Present",
     title: "Software Engineer I",
     company: "Hatch Africa · EthioChicken",
     url: "https://hatchafrica.co",
