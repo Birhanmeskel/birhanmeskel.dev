@@ -71,7 +71,7 @@ export function ProjectCard({ project }: { project: Project }) {
   return (
     <div className={cardBase}>
       <div className={cardBg} />
-      <div className="z-10 sm:order-2 sm:col-span-6">
+      <div className={`z-10 sm:order-2 ${project.image ? "sm:col-span-6" : "sm:col-span-8"}`}>
         <h3>
           {href ? (
             <a
@@ -104,7 +104,7 @@ export function ProjectCard({ project }: { project: Project }) {
         )}
         <TechPills tech={project.tech} />
       </div>
-      {project.image ? (
+      {project.image && (
         <Image
           src={project.image.src}
           alt=""
@@ -113,8 +113,6 @@ export function ProjectCard({ project }: { project: Project }) {
           sizes="(min-width: 640px) 120px, 200px"
           className="z-10 mt-4 aspect-video w-[200px] rounded border-2 border-text/10 object-cover object-top transition group-hover:border-text/30 sm:order-1 sm:col-span-2 sm:mt-1 sm:w-auto"
         />
-      ) : (
-        <div className="hidden sm:order-1 sm:col-span-2 sm:block" />
       )}
     </div>
   );
