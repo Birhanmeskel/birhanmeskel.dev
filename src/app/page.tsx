@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Nav from "@/components/Nav";
+import TechIcon from "@/components/TechIcon";
 import { ExperienceCard, ProjectCard } from "@/components/Cards";
 import { ArrowRight, ArrowUpRight, GitHubIcon, LinkedInIcon, MailIcon } from "@/components/Icons";
 import { education, experience, profile, programs, projects, skills } from "@/data/site";
@@ -91,7 +92,16 @@ export default function Home() {
               {skills.map((s) => (
                 <div key={s.group}>
                   <dt className="text-xs font-bold uppercase tracking-widest text-heading">{s.group}</dt>
-                  <dd className="mt-2 text-sm">{s.items.join(" · ")}</dd>
+                  <dd className="mt-3">
+                    <ul className="flex flex-wrap gap-x-4 gap-y-2.5 text-sm">
+                      {s.items.map((item) => (
+                        <li key={item} className="flex items-center gap-2">
+                          <TechIcon name={item} className="h-4 w-4" />
+                          {item}
+                        </li>
+                      ))}
+                    </ul>
+                  </dd>
                 </div>
               ))}
             </dl>

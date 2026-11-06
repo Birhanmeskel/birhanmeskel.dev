@@ -1,13 +1,15 @@
 import Image from "next/image";
 import type { Experience, Project } from "@/data/site";
 import { ArrowUpRight } from "./Icons";
+import TechIcon from "./TechIcon";
 
-export function TechPills({ tech }: { tech: string[] }) {
+export function TechPills({ tech, className = "mt-2" }: { tech: string[]; className?: string }) {
   return (
-    <ul className="mt-2 flex flex-wrap" aria-label="Technologies used">
+    <ul className={`flex flex-wrap ${className}`} aria-label="Technologies used">
       {tech.map((t) => (
         <li key={t} className="mr-1.5 mt-2">
-          <span className="flex items-center rounded-full bg-accent-soft px-3 py-1 text-xs font-medium leading-5 text-accent">
+          <span className="flex items-center gap-1.5 rounded-full bg-accent-soft px-3 py-1 text-xs font-medium leading-5 text-accent">
+            <TechIcon name={t} />
             {t}
           </span>
         </li>

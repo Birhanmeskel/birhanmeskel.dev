@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowRight, ArrowUpRight } from "@/components/Icons";
+import { TechPills } from "@/components/Cards";
 import { profile, projects } from "@/data/site";
 
 export const metadata: Metadata = { title: "Project Archive" };
@@ -45,15 +46,7 @@ export default function Archive() {
                 </td>
                 <td className="hidden py-4 pr-4 align-top text-sm lg:table-cell">{p.madeAt ?? "—"}</td>
                 <td className="hidden py-4 pr-4 align-top lg:table-cell">
-                  <ul className="flex -translate-y-1.5 flex-wrap">
-                    {p.tech.map((t) => (
-                      <li key={t} className="my-1 mr-1.5">
-                        <span className="flex items-center rounded-full bg-accent-soft px-3 py-1 text-xs font-medium leading-5 text-accent">
-                          {t}
-                        </span>
-                      </li>
-                    ))}
-                  </ul>
+                  <TechPills tech={p.tech} className="-mt-2" />
                 </td>
                 <td className="hidden py-4 align-top sm:table-cell">
                   <ul className="space-y-1">
