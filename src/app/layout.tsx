@@ -25,7 +25,8 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en" className={`${inter.variable} antialiased`}>
-      <body className="font-sans leading-relaxed">
+      {/* suppressHydrationWarning: browser extensions (e.g. ColorZilla) inject attributes on <body> */}
+      <body className="font-sans leading-relaxed" suppressHydrationWarning>
         <Spotlight />
         <a
           href="#content"
