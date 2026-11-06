@@ -8,6 +8,7 @@ export const profile = {
     "I build scalable web and mobile applications, and automate the business processes behind them.",
   location: "Addis Ababa, Ethiopia",
   email: "birhan.abate17@gmail.com",
+  whatsapp: "https://wa.me/251983587175",
   siteUrl: "https://birhanmeskel-dev.vercel.app", // update if you add a custom domain
   resumeUrl: "/resume.pdf" as string | null,
   socials: {

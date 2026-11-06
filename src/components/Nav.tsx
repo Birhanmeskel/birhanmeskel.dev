@@ -6,6 +6,7 @@ const sections = [
   { id: "about", label: "About" },
   { id: "experience", label: "Experience" },
   { id: "projects", label: "Projects" },
+  { id: "contact", label: "Contact" },
 ];
 
 /** Section nav that highlights whichever section is currently in view. */
@@ -25,7 +26,17 @@ export default function Nav() {
       const el = document.getElementById(id);
       if (el) observer.observe(el);
     }
-    return () => observer.disconnect();
+    // The last section is short, so it may never reach the observer's band — mark it active at page bottom.
+    const onScroll = () => {
+      if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 4) {
+        setActive(sections[sections.length - 1].id);
+      }
+    };
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => {
+      observer.disconnect();
+      window.removeEventListener("scroll", onScroll);
+    };
   }, []);
 
   return (

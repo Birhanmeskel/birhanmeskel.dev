@@ -3,6 +3,7 @@ import Nav from "@/components/Nav";
 import TechIcon from "@/components/TechIcon";
 import { ExperienceCard, ProjectCard } from "@/components/Cards";
 import { ArrowRight, ArrowUpRight, GitHubIcon, LinkedInIcon, MailIcon } from "@/components/Icons";
+import { FaWhatsapp } from "react-icons/fa6";
 import { education, experience, profile, programs, projects, skills } from "@/data/site";
 
 function SectionHeading({ children }: { children: React.ReactNode }) {
@@ -157,6 +158,72 @@ export default function Home() {
               View Full Project Archive
               <ArrowRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-2" />
             </Link>
+          </section>
+
+          <section id="contact" className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24" aria-label="Contact">
+            <SectionHeading>Contact</SectionHeading>
+            <div className="rounded-xl border border-text/10 bg-surface/60 p-6 sm:p-8">
+              <p className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-accent">
+                <span className="relative flex h-2 w-2">
+                  <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-accent opacity-60" />
+                  <span className="relative inline-flex h-2 w-2 rounded-full bg-accent" />
+                </span>
+                Open to opportunities
+              </p>
+              <h3 className="mt-3 text-2xl font-bold tracking-tight text-heading sm:text-3xl">Let&apos;s build something together.</h3>
+              <p className="mt-3 max-w-md">
+                Have a role, a freelance project, or a process you&apos;d like to automate? My inbox is always open — I
+                usually reply within a day or two.
+              </p>
+              <div className="mt-6 flex flex-wrap items-center gap-3">
+                <a
+                  href={`mailto:${profile.email}`}
+                  className="inline-flex items-center gap-2 rounded-full bg-accent px-5 py-2.5 text-sm font-semibold text-bg transition hover:opacity-90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+                >
+                  <MailIcon className="h-4 w-4" />
+                  Say hello
+                </a>
+                <a
+                  href={profile.socials.linkedin}
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  className="inline-flex items-center gap-2 rounded-full border border-text/20 px-5 py-2.5 text-sm font-semibold text-heading transition hover:border-accent hover:text-accent focus-visible:border-accent focus-visible:text-accent"
+                >
+                  <LinkedInIcon className="h-4 w-4" />
+                  LinkedIn
+                </a>
+                {profile.resumeUrl && (
+                  <a
+                    href={profile.resumeUrl}
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    className="inline-flex items-center gap-1 rounded-full px-3 py-2.5 text-sm font-semibold text-heading hover:text-accent focus-visible:text-accent"
+                  >
+                    Résumé
+                    <ArrowUpRight className="h-4 w-4" />
+                  </a>
+                )}
+              </div>
+              <ul className="mt-6 space-y-2 border-t border-text/10 pt-5 text-sm">
+                <li>
+                  <a href={`mailto:${profile.email}`} className="inline-flex items-center gap-2.5 font-medium text-heading hover:text-accent focus-visible:text-accent">
+                    <MailIcon className="h-4 w-4 text-muted" />
+                    {profile.email}
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href={profile.whatsapp}
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    className="inline-flex items-center gap-2.5 font-medium text-heading hover:text-accent focus-visible:text-accent"
+                  >
+                    <FaWhatsapp className="h-4 w-4 text-[#25D366]" aria-hidden />
+                    Chat on WhatsApp
+                  </a>
+                </li>
+              </ul>
+            </div>
           </section>
 
           {/* <footer className="max-w-md pb-16 text-sm sm:pb-0">
